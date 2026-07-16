@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Paving Block — KKN Desa Jomin Barat 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ECE8D8;
+  --paper-soft:#F5F3E9;
+  --ink:#28351F;
+  --ink-soft:#57604C;
+  --leaf:#5C7A3D;
+  --leaf-dark:#3E5628;
+  --ochre:#C1832C;
+  --clay:#9C4A2E;
+  --line:#CBC3A4;
+  --white:#FBFAF3;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Public Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);line-height:1.65;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px;}
+
+.perforation{height:18px;background-image:radial-gradient(circle, var(--paper) 3px, transparent 3.5px);background-size:22px 22px;background-position:center;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);}
+.stamp{position:absolute;top:-12px;right:18px;background:var(--white);border:1.5px dashed var(--clay);color:var(--clay);font-family:var(--font-mono);font-size:11px;letter-spacing:.04em;padding:5px 10px;border-radius:3px;transform:rotate(-5deg);box-shadow:0 1px 0 rgba(40,53,31,.06);}
+
+header.masthead{background:var(--paper-soft);border-bottom:3px double var(--ink);}
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-mark{width:38px;height:38px;border-radius:50%;background:var(--leaf);color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:600;font-size:15px;flex-shrink:0;}
+.brand-text .t1{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:var(--ink-soft);text-transform:uppercase;}
+.brand-text .t2{font-family:var(--font-display);font-weight:600;font-size:19px;}
+nav.links{display:flex;gap:26px;font-size:14px;font-weight:500;}
+nav.links a{position:relative;padding:4px 0;color:var(--ink-soft);}
+nav.links a:hover, nav.links a.active{color:var(--leaf-dark);}
+nav.links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--ochre);}
+
+.masthead-strip{border-top:1px solid var(--line);padding:9px 0;font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:6px 22px;}
+.masthead-strip b{color:var(--leaf-dark);}
+
+.hero{padding:60px 0 40px;position:relative;}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin:0 0 14px;}
+.hero h1{font-family:var(--font-display);font-weight:600;font-style:italic;font-size:clamp(30px,4.6vw,48px);line-height:1.1;margin:0 0 18px;max-width:22ch;}
+.hero p.lede{font-size:16.5px;color:var(--ink-soft);max-width:62ch;margin:0 0 22px;}
+.article-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);}
+.article-meta .badge{background:var(--white);border:1px solid var(--line);padding:5px 11px;border-radius:20px;display:inline-flex;align-items:center;gap:6px;}
+.article-meta .dot{width:7px;height:7px;border-radius:50%;background:var(--leaf);}
+
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 22px;flex-wrap:wrap;}
+.section-head h2{font-family:var(--font-display);font-weight:600;font-size:24px;margin:0;}
+.section-head .sub{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;}
+
+.content-grid{display:grid;grid-template-columns:1fr 320px;gap:44px;align-items:start;padding-bottom:60px;}
+
+.article-card{background:var(--white);border:1px solid var(--line);padding:36px;position:relative;}
+.article-card .media{border-radius:2px;min-height:260px;margin-bottom:26px;background:repeating-linear-gradient(120deg, rgba(92,122,61,.14) 0 2px, transparent 2px 26px),linear-gradient(160deg,#6E8C4C,#3E5628);position:relative;overflow:hidden;}
+.article-card .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.article-card .media .tag{position:absolute;bottom:12px;left:12px;background:var(--white);color:var(--leaf-dark);font-family:var(--font-mono);font-size:10.5px;padding:4px 9px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;z-index:2;}
+.article-body p{font-size:15px;color:var(--ink-soft);margin:0 0 18px;}
+.article-body{font-size:15px;}
+
+.pull-quote{border-left:3px solid var(--ochre);background:var(--paper-soft);padding:20px 24px;margin:8px 0 26px;}
+.pull-quote p{font-family:var(--font-display);font-style:italic;font-size:18px;color:var(--ink);margin:0 0 10px;line-height:1.5;}
+.pull-quote cite{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);font-style:normal;}
+
+.meta-row{display:flex;gap:16px;align-items:center;font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);flex-wrap:wrap;margin-top:10px;}
+
+.side-box{background:var(--white);border:1px solid var(--line);padding:20px 22px;margin-bottom:22px;}
+.side-box h4{font-family:var(--font-mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:0 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+.info-list{margin:0;padding:0;list-style:none;}
+.info-list li{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:9px 0;border-bottom:1px dashed var(--line);}
+.info-list li:last-child{border-bottom:none;}
+.info-list li span:first-child{color:var(--ink-soft);}
+.info-list li span:last-child{font-weight:600;color:var(--leaf-dark);text-align:right;}
+.side-box p{font-size:13px;color:var(--ink-soft);margin:0 0 4px;}
+.side-box .foot-link-sb{display:block;margin-top:8px;font-weight:600;color:var(--leaf-dark);}
+
+.other-proker{display:flex;gap:12px;align-items:center;border:1px solid var(--line);background:var(--paper-soft);padding:12px 14px;border-radius:4px;}
+.other-proker .icon{width:34px;height:34px;border-radius:50%;background:var(--leaf-dark);color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:14px;flex-shrink:0;}
+.other-proker .txt .l1{font-family:var(--font-mono);font-size:10px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.05em;}
+.other-proker .txt .l2{font-size:13.5px;font-weight:600;}
+
+.section-divider{padding:8px 0;}
+
+footer{background:var(--ink);color:var(--paper-soft);padding:44px 0 26px;}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(245,243,233,.15);margin-bottom:20px;}
+footer h5{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#B9C6A9;margin:0 0 14px;}
+footer p, footer a{font-size:13.5px;color:#D9D6C4;}
+footer a:hover{color:var(--white);text-decoration:underline;}
+footer .foot-link{display:block;margin-bottom:8px;}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:var(--font-mono);font-size:11px;color:#9AA48B;}
+
+@media (max-width:860px){
+  .content-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:24px;}
+  .article-card{padding:24px;}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="nav-row">
+      <a href="#top" class="brand">
+        <div class="brand-mark">JB</div>
+        <div class="brand-text">
+          <div class="t1">KKN · Univ. Buana Perjuangan Karawang</div>
+          <div class="t2">KKN Desa Jomin Barat</div>
+        </div>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+    <div class="masthead-strip wrap" style="padding-left:0;padding-right:0;">
+      <span><b>Hari ke-5</b> dari 32</span>
+      <span>Kec. Teluk Jambe Timur, Kab. Karawang</span>
+      <span>Diperbarui 12 Juli 2026</span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap" id="beranda">
+    <p class="eyebrow">Program kerja — Pengelolaan Sampah Berbasis 3R</p>
+    <h1>Sulap Sampah Plastik Jadi Paving Block Ramah Lingkungan</h1>
+    <p class="lede">Mahasiswa KKN UBP Karawang mengajak warga Desa Jomin Barat mengelola sampah rumah tangga berbasis 3R dan mengubah limbah plastik menjadi paving block bernilai guna.</p>
+    <div class="article-meta">
+      <span class="badge"><span class="dot"></span>Lingkungan</span>
+      <span class="badge">12 Juli 2026</span>
+      <span class="badge">Minggu ke-1 KKN</span>
+    </div>
+  </section>
+
+  <div class="perforation"></div>
+
+  <section class="wrap content-grid" id="program" style="padding-top:48px;">
+    <div>
+      <article class="article-card">
+        <div class="stamp">Minggu 1</div>
+        <div class="media">
+          <img src="dokumentasi.jpeg" alt="Dokumentasi Eco Paving Block" onerror="this.style.display='none';">
+          <span class="tag">Eco Paving Block</span>
+        </div>
+        <div class="article-body">
+        <p>Kelompok Kuliah Kerja Nyata (KKN) Universitas Buana Perjuangan (UBP) Karawang resmi meluncurkan program pengabdian masyarakat bertajuk “Pengelolaan Sampah Berbasis Masyarakat” di Desa Jomin Barat. Program ini hadir sebagai respons atas terus meningkatnya volume sampah rumah tangga yang membebani sistem pembuangan akhir serta mengancam kelestarian ekosistem tanah, air, dan udara setempat.</p>
+        <p>Melalui bimbingan teknis terpadu, mahasiswa KKN UBP Karawang mengedukasi dan mendampingi warga untuk menerapkan prinsip sirkular 3R (Reduce, Reuse, Recycle) langsung dari sumbernya, yaitu rumah tangga. Edukasi dimulai dari pentingnya pemilahan sampah, pengumpulan berbasis kategori, hingga pengenalan sistem Bank Sampah yang diproyeksikan memberi insentif ekonomi bagi warga yang aktif menyetor, sekaligus memangkas volume residu yang berakhir di TPA.</p>
+        <p>Tidak hanya memberikan teori, mahasiswa KKN juga memimpin lokakarya interaktif pembuatan produk bernilai guna tinggi, salah satunya mengubah sampah plastik (botol bekas) menjadi paving block ramah lingkungan menggunakan campuran pasir, semen, dan oli. Pengolahan limbah nonpangan ini melengkapi diversifikasi potensi ekonomi sampah lain seperti ecobrick, pupuk kompos dari limbah organik, serta pemanfaatan minyak jelantah menjadi lilin aromaterapi dan sabun.</p>
+        <p>Kegiatan bimbingan teknis yang diikuti secara antusias oleh puluhan warga ini ditutup dengan komitmen bersama untuk memulai gerakan kebersihan dari tingkat keluarga. Dengan pendampingan berkala dari mahasiswa KKN UBP Karawang, program ini diharapkan melahirkan kebiasaan jangka panjang demi terwujudnya Desa Jomin Barat yang sehat, bersih, dan asri.</p>
+        </div>
+        <div class="pull-quote">
+          <p>&ldquo;Sampah bukan lagi menjadi masalah apabila kita mampu mengelolanya dengan benar. Melalui kolaborasi program berbasis 3R dan Bank Sampah ini, kami berharap warga Desa Jomin Barat dapat menjadi pelaku aktif yang mandiri dalam menjaga ketahanan lingkungan sekaligus memanen nilai ekonomi dari pengelolaan limbah domestik mereka.&rdquo;</p>
+          <cite>&mdash; Rafif Hylmi Khairullah, Ketua Kelompok KKN UBP Karawang Desa Jomin Barat</cite>
+        </div>
+        <div class="meta-row">
+          <span>12 Juli 2026</span>
+          <span>·</span>
+          <span>Ditulis oleh Kelompok KKN Desa Jomin Barat</span>
+        </div>
+      </article>
+    </div>
+
+    <aside>
+      <div class="side-box">
+        <h4>Detail program</h4>
+        <ul class="info-list">
+          <li><span>Nama program</span><span>Eco Paving Block</span></li>
+          <li><span>Bahan utama</span><span>Plastik, pasir, semen, oli</span></li>
+          <li><span>Prinsip</span><span>3R + Bank Sampah</span></li>
+          <li><span>Sasaran</span><span>Warga Desa Jomin Barat</span></li>
+          <li><span>Pelaksanaan</span><span>Minggu ke-1</span></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h4>Program lain</h4>
+        <a href="#" class="other-proker">
+          <div class="icon">→</div>
+          <div class="txt">
+            <div class="l1">Proker lainnya</div>
+            <div class="l2">Lilin Aromaterapi dari Minyak Jelantah  (Coming Soon)</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="side-box">
+        <h4>Kontak media</h4>
+        <p><b style="color:var(--ink);">Lillah Khairunisa</b></p>
+        <p>Kelompok KKN UBP Desa Jomin Barat</p>
+        <a class="foot-link-sb" href="https://www.instagram.com/kkn.jominbarat2026?igsh=OHBsajZucnI3Zzgz" target="_blank">@kkn.jominbarat2026.ig</a>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer id="kontak">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h5>KKN Desa Jomin Barat</h5>
+        <p style="max-width:34ch;">Kelompok KKN Universitas Buana Perjuangan (UBP) Karawang. Periode KKN 8 Juli &ndash; 8 Agustus 2026.</p>
+      </div>
+      <div>
+        <h5>Kontak</h5>
+        <a class="foot-link" href="#">Lillah Khairunisa</a>
+        <a class="foot-link" href="https://www.instagram.com/kkn.jominbarat2026?igsh=OHBsajZucnI3Zzgz" target="_blank">@kkn.jominbarat2026.ig</a>
+        <a class="foot-link" href="#">Desa Jomin Barat, Kec. Teluk Jambe Timur, Kab. Karawang</a>
+      </div>
+      <div>
+        <h5>Jelajahi</h5>
+        <a class="foot-link" href="#top">Beranda</a>
+        <a class="foot-link" href="#program">Program</a>
+        <a class="foot-link" href="#">Lilin Aromaterapi dari Minyak Jelantah</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 KKN UBP Karawang &mdash; Desa Jomin Barat</span>
+      <span>Jl. H.S. Ronggowaluyo, Teluk Jambe, Desa Sirnabaya</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('nav.links a').forEach(function(a){
+    a.addEventListener('click', function(){
+      document.querySelectorAll('nav.links a').forEach(function(x){x.classList.remove('active');});
+      a.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
